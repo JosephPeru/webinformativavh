@@ -187,21 +187,23 @@ header nav .right-side-menu .sub-menu .btnsing{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10rem;
 }
 
-/* ------LEFT SIDE------- */
-
+/* ------LEFT SIDE HERO------- */
 
 .hero-left-side{
+    border: 1px solid orange;
     width: 50%;
-    height: 82vh;
-    padding-top: 14rem;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-
 .hero-left-side h1{
-    width: 50rem;
+    width: 40rem;
+    text-align: center;
+    display: 0 auto;
     height: 14rem;
     font-size: 4.5rem;
     line-height: 6rem;
@@ -235,7 +237,7 @@ header nav .right-side-menu .sub-menu .btnsing{
     margin-right: 2.5rem;
 }
 
-/* ------RIGHT SIDE------- */
+/* ------RIGHT SIDE HERO------- */
 
 .main-hero-section .hero-right-side{
     width: 50%;
@@ -245,18 +247,16 @@ header nav .right-side-menu .sub-menu .btnsing{
     right: 0;
     top: 0;
     border-radius: 90px 20px 0px 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
-.main-hero-section .hero-right-side img{
+/* .main-hero-section .hero-right-side img{
     border: 1px solid yellow;
     width: 90rem;
     height: 62rem;
     margin-right: 20rem;
     margin-top: 10rem;
-}
+} */
 
 
 

@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Web para Aplicacion Móvil</title>
   </head>
   <body>
     <header>
-    <nav class="contenedor">
-
-        <div class="left-side-menu">   
+      <nav class="contenedor">
+        <div class="left-side-menu">
           <div class="logo">
             <a href="#">
               <img src="images/logo1.png" alt="logo" />
             </a>
           </div>
           <div class="submenu">
-            <a href="#" >
+            <a href="#Home">
               <li>Home</li>
             </a>
-            <a href="#">
+            <a href="#Aboutus">
               <li>About us</li>
             </a>
-            <a href="#">
+            <a href="#Goals">
               <li>Goals</li>
             </a>
             <a href="#">
@@ -41,31 +43,80 @@
             <button id="" class="btnsing">Sing up</button>
           </div>
         </div>
-
-    </nav>
-            <!--------------HERO MAIN------------->
-            <section class="main-hero-section">
-                <!-- LEFT SIDE -->
-                <div class="hero-left-side">
-                    <h1>Where ever you reach for me</h1>
-                    <p>Cause I am you lady and you are my man, I will hold you where ever I am</p>
-                    <div class="button-group">
-                        <a href="#">
-                            <img src="images/icons/googlePlay.png" alt="playstore">
-                        </a>
-                        <a href="#">
-                            <img src="images/icons/appstore.png" alt="appstore">
-                        </a>
-                    </div>
-                </div>
-                <!-- RIGHT SIDE -->
-                <div class="hero-right-side">
-                    <img src="" alt="HeroSection">
-                </div>
-            </section>
-
-
+      </nav>
     </header>
-    
-  </body>
+
+    <!--------------HERO MAIN------------->
+    <section class="main-hero-section" id="Home">
+      <!-- LEFT SIDE -->
+      <div class="hero-left-side">
+        <h1>Where ever you reach for me</h1>
+        <p>
+          Cause I am your lady and you are my man, I will hold you where ever I
+          am
+        </p>
+        <div class="button-group">
+          <a href="#">
+            <img src="images/icons/googlePlay.png" alt="playstore" />
+          </a>
+          <a href="#">
+            <img src="images/icons/appstore.png" alt="appstore" />
+          </a>
+        </div>
+      </div>
+      <!-- RIGHT SIDE -->
+      <div class="hero-right-side">
+        <img src="images/heropage.png" alt="HeroSection" />
+      </div>
+    </section>
+
+    <!------------ TWO SECTION ----------->
+    <section class="common-section" id="Aboutus">
+        <!-- LEFT SIDE -->
+        <div class="two-left-side">
+            <figure>
+                <img src="images/section2pic.png" alt="agenda celular">
+            </figure>
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="two-right-side">
+            <h2>It's is your best app for your apt</h2>
+            <p>You dont take risk with others app what prommise you be the best option. Trust in us!</p>
+            <div class="section-two-group-buttons">
+                <button class="common-button-decorated">Get started</button>
+                <button class="common-button-normal">How it works!</button>
+            </div>
+        </div>
+    </section>
+
+    <!------------ THIRD SECTION ----------->
+
+    <section class="goals-section" id="Goals">
+          <h2>Your goals are our goals</h2>
+          <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto necessitatibus quaerat sit deserunt aperiam rerum velit, molestiae blanditiis. Illum, perferendis.</p>
+          
+          <div class="contenedor goals-task-section ">
+            <div class="task-one">
+              <img src="images/sectionIcon1.png" alt="section-one">
+              <h3>Learn and Improve</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, odit. Blanditiis laudantium deleniti
+                 delectus excepturi?</p>
+            </div>
+            <div class="task-two">
+              <img src="images/sectionIcon2.png" alt="section-two">
+              <h3>Time Management</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ullam aut, explicabo 
+                soluta</p>
+            </div>
+            <div class="task-third">
+              <img src="images/sectionIcon3.png" alt="section-third">
+              <h3>Stay Motivated</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus</p>
+            </div>
+          </div>
+    </section>
+
+
+
+</body>
 </html>

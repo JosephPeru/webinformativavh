@@ -19,7 +19,7 @@
   
   h1,
   h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: var(--main-color);
   }
   
@@ -97,8 +97,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-    border: 1px solid gray;
+    width: 50%;/* 
+    border: 1px solid gray; */
 }
   
     header nav .left-side-menu a img {
@@ -118,7 +118,7 @@
   }
   
   header nav .left-side-menu .submenu a li {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 3.6rem;
     text-transform: capitalize;
     transition: all 0.2s;
@@ -133,8 +133,8 @@
 
 /*------------------RIGHT SIDE----------------*/
 
-  header .right-side-menu {
-      border: 1px solid rgb(150, 96, 123);
+  header .right-side-menu {/* 
+      border: 1px solid rgb(150, 96, 123); */
       width: 50%;
       z-index: 9;
   }
@@ -179,53 +179,51 @@ header nav .right-side-menu .sub-menu .btnsing{
 
 
 .main-hero-section{
-    border: 1px solid blue;
     width: 100%;
     height: 100%;
     margin: auto;
-    padding: 0 10rem;
+    padding: 0 20rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 18rem;
 }
 
 /* ------LEFT SIDE HERO------- */
 
 .hero-left-side{
-    border: 1px solid orange;
     width: 50%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
 .hero-left-side h1{
-    width: 40rem;
-    text-align: center;
+    width: 45rem;
     display: 0 auto;
     height: 14rem;
     font-size: 4.5rem;
     line-height: 6rem;
-    border: 1px solid blue;
     color: var(--main-color);
-    font-style: normal;
     margin-bottom: 0.5rem;
     text-transform: capitalize;
 }
 
 .hero-left-side p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    width: 40rem;
     font-weight: 500;
     color: var(--main-color);
     margin-bottom: 3rem;
+    
 }
 
 .hero-left-side .button-group{
     display: flex;
     justify-content: flex-start;
     width: auto;
-    border: 1px solid orange;
 }
 
 .hero-left-side .button-group a img{
@@ -239,7 +237,7 @@ header nav .right-side-menu .sub-menu .btnsing{
 
 /* ------RIGHT SIDE HERO------- */
 
-.main-hero-section .hero-right-side{
+.hero-right-side{
     width: 50%;
     height: 100vh;
     background-color: var(--background-color); 
@@ -247,8 +245,204 @@ header nav .right-side-menu .sub-menu .btnsing{
     right: 0;
     top: 0;
     border-radius: 90px 20px 0px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+
+.hero-right-side img{
+    width: 65rem;
+    height: 65rem;
+    padding: 6rem 0 0 0;
+    margin-right: 24rem;
+}
+
+
+/*================================== SECCION TWO ============================*/
+
+.common-section{
+    width: 100%;
+    height: 100vh;
+    /* padding: 0 10rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid blueviolet;
+}
+
+
+/*-------LEFT SIDE---------*/
+
+.common-section .two-left-side{
+    /* border: 1px solid yellow; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    /* line-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-section .two-left-side figure{
+    width: 32rem;
+    height: 60em;
+    background: var(--background-color);
+    border-radius: 2rem;
+    /* border: 1px solid cyan; */
+    padding-left: 2rem;
+    
+}
+
+.common-section .two-left-side img{
+    width: 40rem;
+    height: 55rem;
+    border-radius: 2rem;
+    /* border: 1px solid springgreen; */
+    margin-left: 3rem;
+    margin-top: 2.4rem;
+    
+}
+
+
+/*--------RIGHT SIDE--------*/
+
+.common-section .two-right-side{
+    /* border: 1px solid yellow; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.common-section .two-right-side h2{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 40rem;
+}
+
+.common-section .two-right-side p{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    width: 40.3rem;
+}
+
+.common-section .two-right-side .section-two-group-buttons{
+    padding: 1rem 10rem;
+}
+
+.common-section .two-right-side .common-button-decorated{
+    background: var(--primary-button-background);
+    color: #fff;
+    margin-right: 2rem;
+}
+
+.common-section .two-right-side .section-two-group-buttons button:last-child{
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.common-section .two-right-side .section-two-group-buttons button:last-child:hover{
+    color: var(--background-color);
+    background-color: var(--primary-button-background);
+}
+
+
+
+/*============================= THIRD SECTION ======================= */
+
+.goals-section{
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color);
+    padding: 3rem 0;
+    position: relative;
+}
+
+.goals-section h2{
+    font-size: 4.5rem;
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.goals-section .parrafo{
+    font-size: 1.6rem;
+    width: 40rem;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    margin-bottom: 5rem;
+}
+
+.goals-section .goals-task-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.goals-section .goals-task-section .task-one,
+.goals-section .goals-task-section .task-two,
+.goals-section .goals-task-section .task-third
+{
+    width: 29%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+}
+
+.goals-section .goals-task-section .task-one img,
+.goals-section .goals-task-section .task-two img,
+.goals-section .goals-task-section .task-third img
+{
+    width: 12rem;
+    height: 12rem;
+    display: block;
+    margin: auto;
+}
+
+.goals-section .goals-task-section .task-one h3,
+.goals-section .goals-task-section .task-two h3,
+.goals-section .goals-task-section .task-third h3
+{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.goals-section .goals-task-section .task-one p,
+.goals-section .goals-task-section .task-two p,
+.goals-section .goals-task-section .task-third p
+{
+    font-size: 1.6rem;  
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================SIZES OF SCREEN==================== */
 
 /* .main-hero-section .hero-right-side img{
     border: 1px solid yellow;
@@ -257,6 +451,61 @@ header nav .right-side-menu .sub-menu .btnsing{
     margin-right: 20rem;
     margin-top: 10rem;
 } */
+
+@media only screen and (min-width: 1650px) {
+
+
+    .hero-left-side h1{
+        width: 45rem;
+        display: 0 auto;
+        height: 14rem;
+        font-size: 5.5rem;
+        line-height: 6rem;
+        color: var(--main-color);
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+    }
+
+    .hero-right-side img{
+        width: 95rem;
+        height: 95rem;
+        padding: 6rem 0 0 0;
+        margin-right: 38rem;
+    }
+
+    .hero-left-side p{
+        font-size: 1.7rem;
+        width: 40rem;
+        font-weight: 500;
+        color: var(--main-color);
+        margin-bottom: 3rem;   
+    }
+
+    .hero-left-side .button-group{
+        display: flex;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .hero-left-side .button-group a img{
+        width: 25.5rem;
+    }
+
+    .hero-left-side .button-group a img:first-child{
+        width: 18.5rem;
+        margin-right: 2.5rem;
+    }
+
+
+    /*SECTION TWO*/
+
+    .section-two-group-buttons{
+        margin-left: 5rem;
+        width: 100%;
+    }
+    
+
+}
 
 
 

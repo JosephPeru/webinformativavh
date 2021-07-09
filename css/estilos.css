@@ -114,7 +114,8 @@
   }
   
   header nav .left-side-menu .submenu a {
-    margin-right: 4rem;
+    margin-right: 6rem;
+    z-index: 100;
   }
   
   header nav .left-side-menu .submenu a li {
@@ -123,6 +124,7 @@
     text-transform: capitalize;
     transition: all 0.2s;
     font-family: 'Roboto', sans-serif;
+    
   }
 
   header nav .left-side-menu .submenu a li:hover{
@@ -174,6 +176,7 @@ header nav .right-side-menu .sub-menu .btnsing{
 }
 
 /*==============================================HERO MAIN====================================*/
+
 
 
 
@@ -310,7 +313,7 @@ header nav .right-side-menu .sub-menu .btnsing{
 /*--------RIGHT SIDE--------*/
 
 .common-section .two-right-side{
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
     width: 50%;
     height: 100%;
     display: flex;
@@ -370,7 +373,7 @@ header nav .right-side-menu .sub-menu .btnsing{
     text-align: center;
     font-style: normal;
     margin-bottom: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .goals-section .parrafo{
@@ -392,26 +395,35 @@ header nav .right-side-menu .sub-menu .btnsing{
 .goals-section .goals-task-section .task-third
 {
     width: 29%;
-    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 45px 30px 60px 30px;
-    transition: 0.5s;
+    transition: all 0.5s linear;
 }
+
+
+.goals-section .goals-task-section .task-third
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+}
+
 
 .goals-section .goals-task-section .task-one img,
 .goals-section .goals-task-section .task-two img,
 .goals-section .goals-task-section .task-third img
 {
     width: 12rem;
-    height: 12rem;
+    height: 13rem;
     display: block;
     margin: auto;
+    transition: all 0.3s;
 }
 
 .goals-section .goals-task-section .task-one h3,
 .goals-section .goals-task-section .task-two h3,
 .goals-section .goals-task-section .task-third h3
 {
+    margin-top: 1rem;
     text-align: center;
     font-style: normal;
     font-weight: 600;
@@ -421,17 +433,217 @@ header nav .right-side-menu .sub-menu .btnsing{
 .goals-section .goals-task-section .task-two p,
 .goals-section .goals-task-section .task-third p
 {
+    margin-top: 1rem;
     font-size: 1.6rem;  
     font-family: 'Roboto', sans-serif;
 }
 
+/*EFECTO HOVER*/
+.goals-section .goals-task-section .task-one:hover,
+.goals-section .goals-task-section .task-two:hover
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+}
+
+.goals-section .goals-task-section .task-one img:hover,
+.goals-section .goals-task-section .task-two img:hover,
+.goals-section .goals-task-section .task-third img:hover
+{
+    transform: rotate(360deg);
+}
 
 
 
+/*==========================QUARTER SECTION===============================*/
+
+.common-section-tips{
+    width: 100%;
+    height: 100vh;
+    /* padding: 0 10rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid blueviolet;
+}
+
+
+/*-------LEFT SIDE---------*/
+
+.common-section-tips .two-left-side{
+    border: 1px solid yellow;
+    width: 50%;
+    height: 100%;
+    margin-right: 10rem;
+    /* line-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .common-section-tips .two-left-side figure{
+    width: 32rem;
+    height: 60em;
+    background: var(--background-color);
+    border-radius: 2rem;
+    /* border: 1px solid cyan; */
+    /* padding-left: 2rem; */
+    
+/* } */ 
+
+.common-section-tips .two-left-side img{
+    width: 100%;
+    /* height: 55rem; */
+    border-radius: 2rem;
+    /* margin-left: 3rem;
+    margin-top: 2.4rem; */
+    
+}
+
+
+/*--------RIGHT SIDE--------*/
+
+.common-section-tips .two-right-side{
+    /* border: 1px solid yellow; */
+    width: 50%;
+    height: 100%;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.common-section-tips .two-right-side h2{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 40rem;
+}
+
+.common-section-tips .two-right-side p{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    width: 40.3rem;
+}
+
+.common-section-tips .two-right-side .section-two-group-buttons{
+    padding: 1rem 10rem;
+}
+
+.common-section-tips .two-right-side .common-button-decorated{
+    background: var(--primary-button-background);
+    color: #fff;
+    margin-right: 2rem;
+}
+
+.common-section-tips .two-right-side .section-two-group-buttons button:last-child{
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.common-section-tips .two-right-side .section-two-group-buttons button:last-child:hover{
+    color: var(--background-color);
+    background-color: var(--primary-button-background);
+}
+
+/*==========================FIVETH SECTION===============================*/
 
 
 
+.common-section-advices{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid royalblue;
+}
 
+.common-section-advices .contenedorinfo{
+    display: flex;
+    justify-items: center;
+    height: 100%;
+}
+
+/* LEFT SIDE */
+
+.common-section-advices .contenedorinfo .advices{
+    /* border: 1px solid orange; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.common-section-advices .contenedorinfo .advices img{
+    width: 35rem;
+    height: auto;
+}
+
+
+/* RIGHT SIDE */
+
+.textos-advices{
+    /* border: 1px solid orange; */
+    width: 50%;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.textos-advices h3{
+    /* border: 1px solid blue; */
+    font-family: 'Roboto';
+    width: 58rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 4.3rem;
+    margin-bottom: 2rem;
+}
+
+.goals-advices{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.goals-advices .adviceone,
+.goals-advices .advicetwo,
+.goals-advices .advicethree{
+    width: 100%;
+}
+
+.goals-advices .adviceone h4,
+.goals-advices .advicetwo h4,
+.goals-advices .advicethree h4{
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+
+.goals-advices .adviceone .fa-heart,
+.goals-advices .advicetwo .fa-heart,
+.goals-advices .advicethree .fa-heart{
+    color:var(--primary-button-background);
+}
+
+.goals-advices .adviceone p,
+.goals-advices .advicetwo p,
+.goals-advices .advicethree p{
+    font-size: 1.4rem;
+    font-family: 'Roboto';
+    width: 50%;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+   /*  margin-bottom: 1rem;
+    margin-top: 1rem; */
+}
 
 
 
@@ -501,9 +713,69 @@ header nav .right-side-menu .sub-menu .btnsing{
 
     .section-two-group-buttons{
         margin-left: 5rem;
-        width: 100%;
+        /* width: 100%; */
+        /* background: chocolate; */
+    }
+
+    /*SECTION THIRD*/
+
+    .goals-section h2{
+        font-size: 4.5rem;
+        text-align: center;
+        font-style: normal;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
     }
     
+    .goals-section .parrafo{
+        font-size: 1.6rem;
+        width: 60rem;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        margin-bottom: 10rem;
+    }
+
+
+    /*==========================FIVETH SECTION===============================*/
+
+
+    /* RIGHT SIDE */
+
+.textos-advices h3{
+    /* border: 1px solid blue; */
+    font-family: 'Roboto';
+    width: 58rem;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    margin-bottom: 4rem;
+}
+
+
+.goals-advices .adviceone h4,
+.goals-advices .advicetwo h4,
+.goals-advices .advicethree h4{
+    font-size: 2rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+
+.goals-advices .adviceone p,
+.goals-advices .advicetwo p,
+.goals-advices .advicethree p{
+    font-size: 1.8rem;
+    font-family: 'Roboto';
+    width: 50%;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+   /*  margin-bottom: 1rem;
+    margin-top: 1rem; */
+}
 
 }
 

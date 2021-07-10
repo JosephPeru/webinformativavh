@@ -97,39 +97,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;/* 
-    border: 1px solid gray; */
+    width: 50%;
+    /* border: 1px solid gray;  */
 }
   
     header nav .left-side-menu a img {
     width: 13rem;
     height: 5.4rem;
+    /* border: 1px solid blue; */
 }
   
   header nav .left-side-menu .submenu {
     height: inherit;
+    width: 100%;
     display: flex;
     position: relative;
-    
+    /* border: 1px solid blue; */
   }
   
   header nav .left-side-menu .submenu a {
-    margin-right: 6rem;
+    margin-right: 4rem;
     z-index: 100;
   }
   
   header nav .left-side-menu .submenu a li {
     font-size: 1.6rem;
-    line-height: 3.6rem;
+    line-height: 4.2rem;
     text-transform: capitalize;
     transition: all 0.2s;
     font-family: 'Roboto', sans-serif;
-    
+    /* border: 1px solid blue; */
+  }
+
+  header nav .left-side-menu .submenu a li:first-child {
+    margin-left: 1rem;
   }
 
   header nav .left-side-menu .submenu a li:hover{
     color: var(--button-background);
-    border-bottom: 1px solid var(--main-color);
+   /*  border-bottom: 1px solid var(--button-background); */
     transition: all 5s;
   }
 
@@ -152,11 +158,9 @@
 header nav .right-side-menu .sub-menu a{
      margin-right: 5rem; 
      background: rgb(255, 255, 255, 0.5);
-     border: 1px solid blue; 
+     /* border: 1px solid blue;  */
      border-radius: 1rem;
      padding: 0.8rem 3rem; 
-
-
 }
 
 header nav .right-side-menu .sub-menu a li{
@@ -180,7 +184,6 @@ header nav .right-side-menu .sub-menu .btnsing{
 
 
 
-
 .main-hero-section{
     width: 100%;
     height: 100%;
@@ -189,7 +192,7 @@ header nav .right-side-menu .sub-menu .btnsing{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 18rem;
+    margin-bottom: 8rem;
 }
 
 /* ------LEFT SIDE HERO------- */
@@ -201,6 +204,7 @@ header nav .right-side-menu .sub-menu .btnsing{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    /* border: 1px solid blue; */
 }
 
 .hero-left-side h1{
@@ -251,6 +255,7 @@ header nav .right-side-menu .sub-menu .btnsing{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid blue; */
     
 }
 
@@ -291,7 +296,7 @@ header nav .right-side-menu .sub-menu .btnsing{
 
 .common-section .two-left-side figure{
     width: 32rem;
-    height: 60em;
+    height: 60rem;
     background: var(--background-color);
     border-radius: 2rem;
     /* border: 1px solid cyan; */
@@ -313,7 +318,7 @@ header nav .right-side-menu .sub-menu .btnsing{
 /*--------RIGHT SIDE--------*/
 
 .common-section .two-right-side{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 50%;
     height: 100%;
     display: flex;
@@ -465,14 +470,14 @@ header nav .right-side-menu .sub-menu .btnsing{
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
 }
 
 
 /*-------LEFT SIDE---------*/
 
 .common-section-tips .two-left-side{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 50%;
     height: 100%;
     margin-right: 10rem;
@@ -557,7 +562,7 @@ header nav .right-side-menu .sub-menu .btnsing{
 .common-section-advices{
     width: 100%;
     height: 100vh;
-    border: 1px solid royalblue;
+    /* border: 1px solid royalblue; */
 }
 
 .common-section-advices .contenedorinfo{
@@ -595,7 +600,7 @@ header nav .right-side-menu .sub-menu .btnsing{
 .textos-advices h3{
     /* border: 1px solid blue; */
     font-family: 'Roboto';
-    width: 58rem;
+    width: 48rem;
     font-weight: 900;
     font-size: 2.5rem;
     line-height: 4.3rem;
@@ -646,11 +651,161 @@ header nav .right-side-menu .sub-menu .btnsing{
 }
 
 
+/*==========================FOOTER SECTION===============================*/
+
+.footer{
+    /* border: 1px solid #ecd142; */
+    width: 100%;
+    height: 25rem;
+    padding: 3rem 4rem;
+    display: flex;
+    align-items: center;
+    background: var(--background-color);
+}
+
+/* LEFT SIDE */
+
+.logo{
+    /* border: 1px solid #ecd142; */
+    width: 40%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .logo img{
+    /* border: 1px solid blue; */
+    width: 18rem;
+    height: 8rem;
+    margin: 0 auto;
+}
+
+.footer .logo p{
+    text-align: center;
+}
+
+/* RIGHT SIDE */
+
+.group-footer{
+    /* border: 1px solid pink; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.group-footer .group-one,
+.group-footer .group-two,
+.group-footer .group-three,
+.group-footer .group-four{
+    display: flex;
+    flex-direction: column;
+    /* background: chocolate; */
+    padding-top: 2rem;
+}
+
+.group-footer .group-one h4,
+.group-footer .group-two h4,
+.group-footer .group-three h4,
+.group-footer .group-four h4{
+    /* font-family: 'Mulish'; */
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    line-height: 45px;
+    /* border: 1px solid pink; */
+    margin-bottom: 1rem;
+}
 
 
+.group-footer .group-one a,
+.group-footer .group-two a,
+.group-footer .group-three a,
+.group-footer .group-four a{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+}
 
 
+/*=================EXTRA - SECTION MENU BAR=================*/
 
+.icon-bar{
+    position: fixed;
+    top: 50%;
+    /* left: 0; */
+    /* width: 6rem; */
+    /* height: 25rem; */
+    
+    text-align: center;
+    /* line-height: 5rem; */
+    z-index: 10;
+}
+
+.icon-bar a{
+   /*  background: #fe7649; */
+    width: 14.2rem;
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: all 0.5s linear;
+    transform: translateX(-9.5rem);
+    /* border: 1px solid blue; */
+}
+
+.icon-bar a:hover{
+    transform: translateX(0);
+}
+
+
+.icon-bar .fa-facebook-square,
+.icon-bar .fa-linkedin,
+.icon-bar .fa-youtube-square,
+.icon-bar .fa-instagram-square{
+    margin-left: 3rem;
+    margin-right: 1rem;
+    text-align: center;
+    /* border: 1px solid blue; */
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+/*Animation*/
+
+.icon-bar a .fab{
+    animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom{
+    from {
+        transform: scale(0.7);
+    }to {
+        transform: scale(0.9);
+    }
+}
+
+.icon-bar .facebook{
+    background: #00aced;
+}
+.icon-bar .linkedin{
+    background: #0077b5;
+}
+.icon-bar .youtube{
+    background: #cd201f;
+}
+.icon-bar .instagram{
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 
 
@@ -665,6 +820,20 @@ header nav .right-side-menu .sub-menu .btnsing{
 } */
 
 @media only screen and (min-width: 1650px) {
+
+    
+    /* MAIN HERO SECTION */
+
+    .main-hero-section{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 0 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15.8rem;
+    }
 
 
     .hero-left-side h1{
@@ -778,7 +947,6 @@ header nav .right-side-menu .sub-menu .btnsing{
 }
 
 }
-
 
 
 
